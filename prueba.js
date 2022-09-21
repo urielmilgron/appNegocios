@@ -8,10 +8,6 @@ let modal = document.querySelector("#modal")
 let inputImpuestos = document.querySelector("#impuestosInput")
 let tomarImpuestos = document.querySelector("#tomarImpuestos")
 
-const myModal = document.getElementById('myModal')
-const myInput = document.getElementById('myInput')
-
-
 
 //Función que borra texto de modal si existe contenido.
 function detectarTexto(){
