@@ -1,4 +1,4 @@
-// https://docs.google.com/presentation/d/1DaNQPgDunOyL6zy6yzAEEItgX7br5tKVxkcfqwy3GDw/preview?slide=id.g540d00bc79_0_6
+
 
 let obtenerDatoCarlos = document.querySelector("#obtenerDatoCarlos");
 let pagarImpuestosVar = document.querySelector("#pagarImpuestos")
