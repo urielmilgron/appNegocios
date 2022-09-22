@@ -1,6 +1,6 @@
 //Tomo el dom con QS (querySelector)
 let obtenerDatoCarlos = document.querySelector("#obtenerDatoCarlos");
-let pagarImpuestosVar = document.querySelector("#pagarImpuestos");
+// let pagarImpuestosVar = document.querySelector("#pagarImpuestos");
 let mostrarDatosDom = document.querySelector("#mostrarDatos");
 let borrarDatosDom = document.querySelector("#borrarDatos");
 let modal = document.querySelector("#modal");
@@ -57,22 +57,21 @@ class Persona {
   _getDatos() {
     return (this.datos = [this.nombre, this.edad, this.dni, this.plata]);
   }
+//   cambiarDatos(nombre, edad, dni, plata){
+    
+//   }
 }
 
-const Carlos = new Persona("Carlos", 32, 35459512, 30000);
-const Maria = new Persona("Maria", 32, 35459511, 65000);
-const Jose = new Persona("Jose", 32, 35459510, 70000);
-const Daniel = new Persona("Daniel", 32, 35459508, 90000);
 
-let personas = [Carlos, Maria, Jose, Daniel];
+const Persona1 = new Persona("Carlos", 32, 35459512, 30000);
+const Persona2 = new Persona("Maria", 32, 35459511, 65000);
+const Persona3 = new Persona("Jose", 32, 35459510, 70000);
+const Persona4= new Persona("Daniel", 32, 35459508, 90000);
+
+let personas = [Persona1, Persona2, Persona3, Persona4];
 
 
-//No son los datos de carlos, lo usé la primera vez, y quedó ese nombre
-obtenerDatoCarlos.addEventListener("click", () => {
-  for (let i = 0; i < personas.length; i++) {
-    console.log(personas[i]._getDatos());
-  }
-});
+
 
 //Agregamos un evento de escucha en pagarImpuestosVar para que cuando se haga click, se le pida al usuario
 //que ingrese el valor del impuesto
@@ -103,5 +102,13 @@ mostrarDatosDom.addEventListener("click", () => {
 borrarDatosDom.addEventListener("click", () => {
   detectarTexto();
 });
+
+function capturarDatos(){
+  let datosInpuestos = document.getElementById('pagarImpuestos').value
+
+}
+
+
+
 
 // http://localhost:5500/index.html
